@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Izzy Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Generate a Secured<br> <span> Password </span></h1>
+        <div class="display">
+             <input type="text" id="password" placeholder="Password"> <!--when an input type is set to passwor, the password is displayed in asterics -->
+<img src="./images/copy.png" onclick="copyToClipboard()" 
+     alt="Copy" 
+     title="Click to copy password"
+     style="cursor: pointer; width: 24px; height: 24px"/>        </div>
+        <button onclick="document.getElementById('password').value = createPassword()"> <img src="./images/generate.png"> Generate Password</button>
+    </div>
+</body>
+</html>
